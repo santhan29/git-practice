@@ -4,7 +4,12 @@ userid=$(id -u)
 #echo "user id is $userid"
 
 VALIDATE(){
-    echo "exit status: $1"
+    if [ $1 -ne 0 ]
+    then 
+        echo "$2 is failed"
+    else 
+        echo "$2 is success"
+    fi 
 }
 
 if [ $userid -ne 0 ]
@@ -15,7 +20,7 @@ fi
 
 dnf list installed git 
 
-VALIDATE $?
+VALIDATE $? "listing git"
 
 # if [ $? -ne 0 ]
 # then
