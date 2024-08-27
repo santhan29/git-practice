@@ -9,4 +9,12 @@ if [ $userid -ne 0 ]
         exit 1
 fi 
 
-dnf install git -y 
+dnf list installed git 
+
+if [ $? -ne 0 ]
+then
+    echo "git is not installed then install git"
+else 
+    echo "git already installed nothing to do"
+fi 
+
