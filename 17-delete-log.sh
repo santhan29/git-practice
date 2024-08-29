@@ -16,6 +16,7 @@ echo "files: $FILES"
 while IFS= read -r line 
 do 
     echo "deleting line : $line"
+    rm -rf $line 
 done <<< $FILES 
 
 
