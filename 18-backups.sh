@@ -13,12 +13,12 @@ then
     USAGE 
 fi 
 
-if[ ! -d $SOURCE_DIR ]
+if [ ! -d $SOURCE_DIR ]
 then  
     echo "$SOURCE_DIR doesnot exist.. please check"
 fi 
 
-if[ ! -d $DEST_DIR ]
+if [ ! -d $DEST_DIR ]
 then 
     echo "$DEST_DIR doesnot exist.. please check"
 fi 
