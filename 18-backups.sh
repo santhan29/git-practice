@@ -14,7 +14,7 @@ then
 fi 
 
 if[ ! -d $SOURCE_DIR ]
-then 
+then  
     echo "$SOURCE_DIR doesnot exist.. please check"
 fi 
 
